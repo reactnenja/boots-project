@@ -3,310 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Bootstrap</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header">
-      <nav
-        class="navbar p-3 container container-xl container-xxl d-flex star align-items-center"
-      >
-        <a href="#" class="logo-link navbar-brand">
-          <img src="assets/images/Logo.svg" alt="" />
-        </a>
-
-        <div class="d-flex align-items-center gap-5">
-          <ul class="nav justify-items-start gap-3">
-            <li class="nav-item">
-              <a
-                class="nav-link active site__link text-capitalize"
-                aria-current="page"
-                href="#"
-                >Home</a
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="assets/images/logo-2.svg" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <a class="offcanvas-title" href="#"
+                ><img src="assets/images/logo-2.svg" alt=""
+              /></a>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="offcanvas-body d-flex justify-content-lg-between align-items-center justify-content-start flex-column flex-lg-row"
+            >
+              <ul
+                class="navbar-nav justify-content-lg-end justify-content-start align-items-center flex-grow-1"
               >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link site__link text-capitalize"
-                href="assets/pages/about.html"
-                >About us</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link site__link text-capitalize" href="#"
-                >Pricing</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link site__link text-capitalize" href="#">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link site__link text-capitalize" href="#">blog</a>
-            </li>
-          </ul>
-          <button class="nav__btn">Contact</button>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">about us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">work</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">blog</a>
+                </li>
+              </ul>
+              <button class="btn-sd">Contact</button>
+            </div>
+          </div>
         </div>
       </nav>
-
-      <div class="container container-xl container-xxl">
-        <div class="hero">
-          <div class="row g-3 justify-content-between align-items-center">
-            <div class="col-lg-6 col-xl-6">
-              <h1 class="h1 mb-4 text-white">
+      <section class="hero">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12">
+              <h1 class="h1 mb-4">
                 Building stellar websites for early startups
               </h1>
-              <p class="lead text-white">
+              <p class="lead">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt.
               </p>
-              <button class="site__btn">View our work</button>
-              <a href="#" class="text-white link text-decoration-none">
-                View Pricing
-                <i
-                  class="site__icons link-opacity-10-hover fa-solid fa-arrow-up-long fa-rotate-90"
-                ></i
-              ></a>
+              <div class="site-btn-group d-flex justify-content-between w-100">
+                <button class="site-btn-hero">Read more</button>
+              </div>
             </div>
-            <div class="col-lg-6 col-xl-6">
-              <img src="assets/images/Illustration.svg" alt="" />
+            <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12">
+              <img
+                src="assets/images/Illustration.svg"
+                class="img-fluid"
+                alt=""
+              />
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </header>
-    <main class="main">
-      <section class="container container-xl container-xxl">
-        <section
-          class="row mb-sm-5 mb-md-5 mb-lg-5 mb-xl-5 justify-content-between align-items-center"
-        >
-          <div class="col-md-6 col-design col-lg-6 col-xl-3 text-start">
-            <h2 class="h2 text-black">View our projects</h2>
-          </div>
-          <div
-            class="col-md-6 col-design col-lg-6 col-xl-3 text-start texwhite"
-          >
-            <a href="" class="text-decoration-none text-dark"
-              >View More
-              <i class="text-danger fa-solid fa-arrow-up-long fa-rotate-90"></i
-            ></a>
-          </div>
-        </section>
-        <section class="row">
-          <div class="col-md-12 col-lg-12 col-xl-8 col-xxl-8 position-relative">
-            <a href="#"><img src="assets/images/image-cl-1.png" alt="" /></a>
-            <div
-              class="back-gred p-3 position-absolute top-0 bg-blue bg-opacity-25"
-            >
-              <h4 class="h4 text-white headline">
-                Workhub office Webflow Webflow Design
-              </h4>
-              <p class="lead text-white">
-                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
-                aliquam
-              </p>
-              <a href="" class="text-back-link text-decoration-none"
-                >View More
-                <i
-                  class="text-back-icon fa-solid fa-arrow-up-long fa-rotate-90"
-                ></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-2 col-xl-2">
-            <div class="row flex-column">
-              <div class="col card-back-d">
-                <a href="#">
-                  <img src="assets/images/image-cr-1.png" alt=""
-                /></a>
-              </div>
-              <div class="col position-relative">
-                <a href="#">
-                  <img src="assets/images/image-cr-2.png" alt=""
-                /></a>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
-      <section class="design">
-        <span class="text-black text-design">Features</span>
-        <h2 class="h2">Design that solves problems, one product at a time</h2>
-        <div class="container">
-          <section
-            class="row gap-5 bg justify-content-between align-items-center text-center"
-          >
-            <div
-              class="col-md-6 col-design col-lg-3 col-xl-3 text-start bg-white shadow"
-            >
-              <h4 class="h4 text-black">Uses Client First</h4>
-              <p class="lead text-black">
-                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
-                aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
-                aliquam sed mi.
-              </p>
-            </div>
-            <div
-              class="col-md-6 col-design col-lg-3 col-xl-3 text-start bg-white shadow"
-            >
-              <h4 class="h4 text-black">Two Free Revision Round</h4>
-              <p class="lead text-black">
-                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
-                aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
-                aliquam sed mi.
-              </p>
-            </div>
-            <div
-              class="col-md-6 col-design col-lg-3 col-xl-3 text-start bg-white shadow"
-            >
-              <h4 class="h4 text-black">Template Customization</h4>
-              <p class="lead text-black">
-                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
-                aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
-                aliquam sed mi.
-              </p>
-            </div>
-            <!-- col xl end -->
-            <div
-              class="col-md-6 col-design col-lg-3 col-xl-3 text-start bg-white shadow"
-            >
-              <h4 class="h4 text-black">24/7 Support</h4>
-              <p class="lead text-black">
-                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
-                aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
-                aliquam sed mi.
-              </p>
-            </div>
-            <div
-              class="col-md-6 col-design col-lg-3 col-xl-3 text-start bg-white shadow"
-            >
-              <h4 class="h4 text-black">Quick Delivery</h4>
-              <p class="lead text-black">
-                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
-                aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
-                aliquam sed mi.
-              </p>
-            </div>
-            <div
-              class="col-md-6 col-design col-lg-3 col-xl-3 text-start bg-white shadow"
-            >
-              <h4 class="h4 text-black">Hands-on approach</h4>
-              <p class="lead text-black">
-                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
-                aliquam sed faucib turpis eu gravida mi. Pellentesque et velit
-                aliquam sed mi.
-              </p>
-            </div>
-            <!-- col xl end -->
-          </section>
-        </div>
-      </section>
+    <!-- //HEADER -->
+    <!-- MAIN -->
+    <!-- //MAIN -->
+    <!-- FOOTER -->
+    <!-- //FOOTER -->
 
-      <section class="site__sidebar p-5">
-        <div class="container">
-          <div
-            class="col-sm-12 col-md-12 row justify-content-between align-items-start"
-          >
-            <div class="col-lg-3 col-xl-3 side__left">
-              <h3 class="display-6 fw-bold text-black mb-4">
-                What our clients say about us
-              </h3>
-              <p class="lead">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
-              </p>
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7">
-              <p class="lead display-6 mb-4">
-                "The best agency we’ve worked with so far. They understand our
-                product and are able to add new features with a great focus."
-              </p>
-              <div class="avatar-bg d-flex justify-content-start gap-2">
-                <img
-                  src="assets/images/woman.png"
-                  width="50"
-                  height="50"
-                  alt=""
-                  class="rounded-5"
-                />
-                <div>
-                  <h5 class="h5">Jenny Wilson</h5>
-                  <span class="">Vice President</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-            <a href="#" class="logo"
-              ><img src="assets/images/Logo.svg" alt=""
-            /></a>
-            <p class="lead text-white">
-              We are always open to discuss your project and improve your online
-              presence.
-            </p>
-            <div class="footer__wrap">
-              <div class="row">
-                <div class="col-6">
-                  <h6 class="h6">Email me at</h6>
-                  <p>contact@website.coms</p>
-                </div>
-                <div class="col-6 text-end">
-                  <h6>Call us</h6>
-                  <p>0927 6277 28525</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-            <h2 class="h2 text-white">Lets Talk!</h2>
-            <p class="lead text-white">
-              We are always open to discuss your project, improve your online
-              presence and help with your UX/UI design challenges.
-            </p>
-            <div
-              class="socails d-flex justify-content-start gap-4 align-items-center"
-            >
-              <a
-                href="#"
-                class="text-white text-decoration-none"
-                target="_blank"
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
-              <a
-                href="#"
-                class="text-white text-decoration-none"
-                target="_blank"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
-              <a
-                href="#"
-                class="text-white text-decoration-none"
-                target="_blank"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a
-                href="#"
-                class="text-white text-decoration-none"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- SCRIPT -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- //SCRIPT -->
   </body>
 </html>
