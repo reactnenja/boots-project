@@ -3,51 +3,9 @@ body {
 }
 
 .header {
-  height: 100vh;
+  height: 760px;
   width: 100%;
   background: #1c1e53;
-}
-.header .hero {
-  width: 100%;
-}
-.hero {
-  height: 1020px;
-}
-.row {
-  height: 900px;
-  padding: 149px 0px;
-}
-.row .h1 {
-  color: white;
-  max-width: 582px;
-  width: 100%;
-  font-size: 54px;
-  font-weight: 600;
-  line-height: 74px; /* 137.037% */
-}
-.row p {
-  color: #fff;
-  max-width: 562px;
-  width: 100%;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 28px; /* 175% */
-}
-.row .site-btn-hero {
-  padding: 16px 56px;
-  background-color: #fcd980;
-  border: 2px solid #fcd980;
-  border-radius: 47px;
-  color: #1b1c2b;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 32px; /* 177.778% */
-  transition: all 0.9s;
-  cursor: pointer;
-}
-.site-btn-hero:hover {
-  background-color: #1c1e53;
-  color: #fff;
 }
 .header .navbar {
   height: 91px !important;
@@ -91,3 +49,128 @@ body {
   background-color: #1c1e53;
   color: white;
 }
+/* header hero */
+.header .hero {
+  width: 100%;
+}
+.hero {
+  height: 1020px;
+}
+@media (max-width: 992px) {
+  .header {
+    height: 1200px;
+  }
+}
+.header {
+  padding: 149px 0px;
+}
+.row {
+}
+.row .h1 {
+  color: white;
+  max-width: 582px;
+  width: 100%;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 74px; /* 137.037% */
+}
+.row p {
+  color: #fff;
+  max-width: 562px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+}
+.row .site-btn-hero {
+  padding: 16px 56px;
+  background-color: #fcd980;
+  border: 2px solid #fcd980;
+  border-radius: 47px;
+  color: #1b1c2b;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px; /* 177.778% */
+  transition: all 0.9s;
+  cursor: pointer;
+}
+.site-btn-hero:hover {
+  background-color: #1c1e53;
+  color: #fff;
+}
+.site-link-hero {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  transition: all 0.9s;
+  font-size: 20px;
+}
+.site-link-hero:hover {
+  color: #fcd980;
+}
+
+/* header hero */
+/* MAIN */
+.main-view {
+  padding: 128px 0px;
+}
+/* main features */
+.main .main-features {
+  width: 100%;
+  height: 1191px;
+  padding: 128px 0px;
+  background: #f4f6fc;
+}
+.d-flex .site-feat-heading {
+  color: #282938;
+  text-align: center;
+  max-width: 630px;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px; /* 133.333% */
+}
+.site-feat-card {
+  max-width: 405px;
+  padding: 48px;
+  height: 316px;
+  background: #fff;
+}
+.card {
+  padding: 48px;
+}
+.card > img {
+  width: 35px;
+  height: 35px;
+}
+.card-body > .card-text {
+  color: #1b1c2b;
+}
+
+.siladers-menu {
+  padding: 130px 0px 108px 0px;
+  height: 700px;
+}
+/* main features */
+/* //MAIN */
+
+/* FOOTER */
+.footer {
+  background: #1c1e53;
+  height: 589px;
+  padding: 104px 0px 92px 0px;
+}
+.cubic-foot {
+  width: 517px;
+  height: 95px;
+  background: #fcd980;
+  padding: 18px 37px 16px 37px;
+}
+
+.link-email,
+.link-tel {
+  color: #282938;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+/* //FOOTER */
