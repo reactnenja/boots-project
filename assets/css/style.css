@@ -165,6 +165,11 @@ body {
   background: #fcd980;
   padding: 18px 37px 16px 37px;
 }
+@media (max-width: 992px) {
+  .cubic-foot {
+    padding: 18px 37px 16px 37px;
+  }
+}
 
 .link-email,
 .link-tel {

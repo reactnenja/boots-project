@@ -1,0 +1,76 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+.bg-tritary {
+  background-color: #1c1e53;
+  color: white;
+  border: 2px solid #1c1e53;
+  transition: all 0.9s;
+}
+
+bg-tritary:hover {
+  background-color: transparent;
+  border-color: #1c1e53;
+}
+.contact-header .navbar {
+  background: #1c1e53;
+  height: 92px;
+}
+
+.navbar .offcanvas {
+  background: #1c1e53;
+}
+.offcanvas-body .nav-item {
+  padding-right: 40px;
+}
+.offcanvas .nav-link .active {
+  color: white;
+}
+.offcanvas .nav-link {
+  text-transform: capitalize;
+  color: #bbbbcb;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+}
+.offcanvas-body .nav-link:hover {
+  color: #fcd980;
+}
+
+.btn-sd {
+  padding: 16px 57px;
+  border-radius: 41px;
+  color: white;
+  font-weight: 600;
+  border: 2px solid rgba(244, 246, 252, 0.2);
+  transition: all 0.9s;
+}
+.btn-sd:hover {
+  background: white;
+  color: #1c1e53;
+}
+
+.row .form-control {
+  padding: 18px 32px;
+}
+.contact-main .h2 {
+  color: #282938;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  margin-bottom: 16px;
+  margin-top: 128px;
+}
+.contact-main .lead {
+  color: #282938;
+  text-align: center;
+  max-width: 562px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+.row .form-control::placeholder {
+  font-weight: 600;
+}
